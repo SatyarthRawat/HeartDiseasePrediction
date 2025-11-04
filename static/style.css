@@ -1,0 +1,182 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Website Title */
+.container {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #6a11cb 0%, #5725fc 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-heading {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.description p {
+    font-size: 1rem;
+    font-style: normal;
+    margin: 10px 0 0;
+    line-height: 1.5;
+}
+
+/* Main Content Area */
+.ml-container {
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1 0 auto;
+}
+
+.form-heading {
+    font-size: 1.8rem;
+    color: #444;
+}
+
+/* Form Layout */
+form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+label {
+    text-align: right;
+    font-weight: 600;
+    color: #555;
+}
+
+/* Input and Select Fields */
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.3);
+    outline: none;
+}
+
+/* Predict Button */
+.my-cta-button {
+    grid-column: 1 / -1; /* Span across both columns */
+    background: #2575fc;
+    color: #ffffff;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.my-cta-button:hover {
+    background: #1a5ac9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.my-cta-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Result Display */
+.results {
+    padding: 40px 20px;
+    flex: 1 0 auto;
+}
+
+.results h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.danger {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.safe {
+    color: #2ecc71;
+    font-weight: 700;
+}
+
+/* Footer */
+.footer {
+    flex-shrink: 0;
+    padding: 20px;
+    background: #333;
+    color: #ffffff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact {
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    color: #ffffff;
+    padding: 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.contact-icon:hover {
+    color: #2575fc;
+}
+
+.footer-description {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #bbb;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+    form {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        gap: 15px;
+    }
+
+    label {
+        text-align: left; /* Align labels to the left for better mobile readability */
+    }
+}
